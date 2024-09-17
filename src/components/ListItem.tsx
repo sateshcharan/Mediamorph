@@ -39,7 +39,7 @@ const ListItem = ({ file, handleDelete, handleConvert, index }: any) => {
           <FileImageIcon color="orange" />
         )}
         <h3 className=" text-xl font-semibold tracking-tight text-nowrap ">
-          {file.file.name}
+          {file.file.name.slice(0, 30) + "..."}
         </h3>
         <h4 className=" text-lg font-semibold tracking-tight text-slate-500">
           {`(${(file.file.size / 1000000).toFixed(2)} MB)`}
